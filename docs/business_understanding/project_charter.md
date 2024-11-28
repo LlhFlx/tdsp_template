@@ -58,7 +58,10 @@ En este proyecto se usará la metodología CRISP-DM (Cross Industry Standard Pro
 
 ## Presupuesto
 
-[Descripción del presupuesto asignado al proyecto]
+El presupuesto actual, dado que es un proyecto académico, puede estimarse como la cantidad de horas multiplicado el valor hora de cada uno de los miembros del equipo.
+
+Son 5 semanas, cada semana con una dedicación horaria de 10 horas.
+10 horas x 5 semanas x 3 integrantes x 150.000 COP / hora = 22.500.000 COP
 
 ## Stakeholders
 
