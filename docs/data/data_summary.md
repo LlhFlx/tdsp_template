@@ -20,18 +20,21 @@ Datos clave de nuestro corpus
 - El número de documentos de nuestro corpus que cambia al codificarlo con unidecode es: 1,724. El principal caracter que hace que al codificarlo cambie es el símbolo <’>.
 - Dado que la Biblia fue completamente traducida en inglés no hay mezcla de idiomas.
 
-## Variable objetivo [TODO]
+## Variable objetivo 
+Para el trabajo que estamos realizando (como se trata es de identificación de entidades) no existe una variable objetivo per se. Se podría pensar que la "variable objetivo" sería el conjunto de entidades dentro del texto que se va a procesar.
 
-En esta sección se describe la variable objetivo. Se muestra la distribución de la variable y se presentan gráficos que permiten entender mejor su comportamiento.
+## Variables individuales 
+Una de las variables que podemos obtener con el corpus es el la longitud de cada uno de los versos de acuerdo al número de caracteres.
 
-## Variables individuales [TODO]
+Con la gráfica podemos observar que la distribución en la gran mayoría de los documentos tienen del orden de centenas de caracteres (entre 100 y 1000). Algunos, del orden de decenas (entre 10 y 100). Y solo unos cuantos tienen o menos de 10 o más de 1000.
+![alt text](../images/image.png)
 
-En esta sección se presenta un análisis detallado de cada variable individual. Se muestran estadísticas descriptivas, gráficos de distribución y de relación con la variable objetivo (si aplica). Además, se describen posibles transformaciones que se pueden aplicar a la variable.
 
-## Ranking de variables [TODO]
+Otro análisis interesante que se puede hacer es ver la importancia del preprocesamiento de los datos. En las siguientes dos imágenes se pueden ver cómo cambia el top 20 de palabras con más apariciones en el corpus antes y después de preprocesar.
+Si no se hace preprocesamiento, las palabras con más repetición serán aquellas que el lenguaje natural utiliza como auxiliares (pronombres, conjunciones, contracciones, etc).
+Luego de preprocesar se puede ver cómo el top cambia y ahora aparecen palabras con mayor significado.
+![alt text](../images/image-2.png)
+![alt text](../images/image-1.png)
 
-En esta sección se presenta un ranking de las variables más importantes para predecir la variable objetivo. Se utilizan técnicas como la correlación, el análisis de componentes principales (PCA) o la importancia de las variables en un modelo de aprendizaje automático.
-
-## Relación entre variables explicativas y variable objetivo [TODO]
-
-En esta sección se presenta un análisis de la relación entre las variables explicativas y la variable objetivo. Se utilizan gráficos como la matriz de correlación y el diagrama de dispersión para entender mejor la relación entre las variables. Además, se pueden utilizar técnicas como la regresión lineal para modelar la relación entre las variables.
+## Ranking de Variables
+Como no es necesario una reducción dimensional, no se hizo PCA ni se hizo un ranking de variables.
