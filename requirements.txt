@@ -1,2 +1,4 @@
+gensim==4.3.3
 pandas==2.2.3
 kaggle==1.6.17
+spacy==3.7.5

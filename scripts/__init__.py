@@ -1,0 +1,1 @@
+from .data_acquisition.main import load_religious_texts as load_religious_texts

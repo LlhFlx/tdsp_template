@@ -23,3 +23,6 @@ Esta plantilla proporciona las siguientes carpetas y archivos:
 
 2. Para obtener los datos ejecute el script `get_data_from_kaggle.sh`. Los archivos se guardarán en el directorio `data`. Una vez que el directorio tenga los dos archivos csv (la biblia y el corán), podrá ejecutar el `main.py` para cargar los datos
 
+3. Si obtienes un error parecido a `OSError: [E050] Can't find model 'en_core_web_sm'`
+ejecuta el script dentro de la carpeta preprocessing
+
