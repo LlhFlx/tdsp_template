@@ -18,21 +18,21 @@ Por ejemplo, el verso "*The Lord is my shepherd; I shall not want.*" fue clasifi
 
 Se utilizaron las siguientes métricas de evaluación:
 
-**Precisión**: Alta precisión en la clasificación de sentimientos individuales.
+  - **Precisión**: Alta precisión en la clasificación de sentimientos individuales.
 
-**Interpretabilidad contextual**: Limitada capacidad del modelo para captar sentimientos positivos cuando los versos se presentan de forma aislada.
+  - **Interpretabilidad contextual**: Limitada capacidad del modelo para captar sentimientos positivos cuando los versos se presentan de forma aislada.
 
 ## Conclusiones y Recomendaciones
 
 El análisis revela que:
 
-- Fortalezas: El modelo tiene un alto nivel de precisión en clasificaciones individuales cuando el sentimiento es evidente y directo.
+  - **Fortalezas**: El modelo tiene un alto nivel de precisión en clasificaciones individuales cuando el sentimiento es evidente y directo.
 
-- Debilidades: El modelo falla en capturar el contexto completo de textos poéticos o simbólicos cuando se analizan de manera aislada.
+  - **Debilidades**: El modelo falla en capturar el contexto completo de textos poéticos o simbólicos cuando se analizan de manera aislada.
 
 ### Recomendaciones:
 
-- Entrenar el modelo con un corpus que incluya textos antiguos y religiosos para mejorar su sensibilidad hacia estos estilos literarios.
+  - Entrenar el modelo con un corpus que incluya textos antiguos y religiosos para mejorar su sensibilidad hacia estos estilos literarios.
 
 ## Referencias
 
