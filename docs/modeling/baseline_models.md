@@ -4,7 +4,9 @@ Este documento contiene los resultados del modelo baseline.
 
 ## Descripción del modelo
 
-El modelo baseline es el primer modelo construido y se utiliza para establecer una línea base para el rendimiento de los modelos posteriores.
+El modelo baseline es el primer modelo construido y se utiliza para establecer una línea base para el rendimiento de los modelos posteriores. Este modelo se basa en un pipeline de transformers para análisis de sentimientos.
+
+### Implementación del modelo
 
 ## Variables de entrada
 
