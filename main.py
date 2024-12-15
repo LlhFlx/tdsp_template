@@ -1,20 +1,22 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from typing import List
 import numpy as np
+from gensim.models import KeyedVectors
+
 
 
 class ApiInput(BaseModel):
-    word: str
+    words: List[str]
 
 class ApiOutput(BaseModel):
-    embedding_rep : float
+    embedding_rep : List[List[float]]
 
 app = FastAPI()
 
-model = np.load('./models/embeddings_bible.npz')
-embeddings = {key: model[key] for key in model.files}
+model = KeyedVectors.load('./models/keyed_vector_bible.kvmodel')
 
 # Reemplace esto con su implementación:
 @app.post("/predict")
 async def predict(data: ApiInput) -> ApiOutput:
-    return ApiOutput(embedding_rep=model.get(data.word))
+    return ApiOutput(embedding_rep=model[data.words])
