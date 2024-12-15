@@ -1,4 +1,6 @@
 import requests
-model_url = "tdsptemplate-production.up.railway.app" # Agregue acá la url de railway
 
-requests.post(model_url, json={"word": "lord"})
+model_url = "https://tdsptemplate-production.up.railway.app" # Agregue acá la url de railway
+path = 'predict'
+r = requests.post(f"{model_url}/{path}", json={"words": ["lord", "day"]})
+print(r.json())
