@@ -4,6 +4,8 @@ import spacy
 import time
 import re
 import pandas as pd
+import numpy as np
+
 # Add parent directory to path to import from data_acquisition
 PARENT_DIR = str(Path(__file__).parent.parent)
 sys.path.append(PARENT_DIR)
@@ -89,6 +91,9 @@ def main() -> None:
     try:
         tokens = list(map(lambda doc: str(doc).split(" "), data['cleaned_verses']))
         embedding = feature_extraction(tokens)
+        print("type", type(embedding.wv))
+        embedding_model = {word: embedding.wv[word] for word in embedding.wv.index_to_key}
+        np.savez_compressed('./models/embeddings_bible.npz', **embedding_model) #save embeding in a file
         vect = embedding.wv[tokens[10]]
         print("Ejemplo del embedding")
         print(tokens[10])
